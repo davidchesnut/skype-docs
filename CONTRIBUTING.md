@@ -15,7 +15,7 @@ Here are some ways you can contribute to this documentation:
 
 * To make small changes to an article, [Contribute using GitHub](#contribute-using-github).
 * To make large changes, or changes that involve code, [Contribute using Git](#contribute-using-git).
-* Report documentation bugs via GitHub Issues
+* Report documentation bugs via GitHub Issues.
 * Request new documentation at the [Office Developer Platform UserVoice](http://officespdev.uservoice.com) site.
 
 ## Contribute using GitHub
@@ -24,15 +24,19 @@ Use GitHub to contribute to this documentation without having to clone the repo 
 
 **Note** Using this method allows you to contribute to one article at a time.
 
-### To Contribute using GitHub
+### To contribute using GitHub
 
 1. Find the article you want to contribute to on GitHub. 
 
-    If the article is in MSDN, choose the **suggest and submit changes** link in the **Contribute to this content** section and you'll be taken to the same article on GitHub.
+   If the article is in MSDN, choose the **suggest and submit changes** link in the **Contribute to this content** section and you'll be taken to the same article on GitHub.
+   
 2. Once you are on the article in GitHub, sign in to GitHub (get a free account [Join GitHub](https://github.com/join).
+
 3. Choose the **pencil icon** (edit the file in your fork of this project) and make your changes in the **<>Edit file** window. 
+
 4. Scroll to the bottom and enter a description.
-5. Choose **Propose file change**>**Create pull request**.
+
+5. Choose **Propose file change** > **Create pull request**.
 
 You now have successfully submitted a pull request. Pull requests are typically reviewed within 10 business days. 
 
@@ -46,15 +50,18 @@ Use Git to contribute substantive changes, such as:
 * Contributing large changes to text.
 * Adding new topics.
 
-### To Contribute using Git
+### To contribute using Git
 
-1. If you don't have a GitHub account, set one up at [GitHub](https://github.com/join). 
+1. If you don't have a GitHub account, set one up at [GitHub](https://github.com/join).
+
 2. After you have an account, install Git on your computer. Follow the steps in [Setting up Git Tutorial](https://help.github.com/articles/set-up-git/).
+
 3. To submit a pull request using Git, follow the steps in [Use GitHub, Git, and this repository](#use-github-git-and-this-repository).
+
 4. You will be asked to sign the Contributor's License Agreement if you are:
 
     * A member of the Microsoft Open Technologies group.
-    * A contributors who doesn't work for Microsoft.
+    * A contributor who doesn't work for Microsoft.
 
 As a community member, you must sign the Contribution License Agreement (CLA) before you can contribute large submissions to a project. You only need to complete and submit the documentation once. Carefully review the document. You may be required to have your employer sign the document.
 
@@ -69,19 +76,25 @@ Pull requests are typically reviewed within 10 business days.
 ### To set up your fork of the repository
 
 1.	Set up a GitHub account so you can contribute to this project. If you haven't done this, go to [GitHub](https://github.com/join) and do it now.
+
 2.	Install Git on your computer. Follow the steps in the [Setting up Git Tutorial] [Set Up Git].
+
 3.	Create your own fork of this repository. To do this, at the top of the page,  choose the **Fork** button.
+
 4.	Copy your fork to your computer. To do this, open Git Bash. At the command prompt enter:
 
-        git clone https://github.com/<your user name>/<repo name>.git
+        `git clone https://github.com/<your user name>/<repo name>.git`
 
     Next, create a reference to the root repository by entering these commands:
 
-        cd <repo name>
-        git remote add upstream https://github.com/OfficeDev/<repo name>.git
-        git fetch upstream
+        `cd <repo name>`
+        
+        `git remote add upstream https://github.com/OfficeDev/<repo name>.git`
+        
+        `git fetch upstream`
 
 Congratulations! You've now set up your repository. You won't need to repeat these steps again.
+
 
 ### Contribute and edit content
 
@@ -115,8 +128,9 @@ To edit files, open them in an editor of your choice and modify them. To create 
 
 The files in `C:\Users\<yourusername>\<repo name>` are a working copy of the new branch that you created in your local repository. Changing anything in this folder doesn't affect the local repository until you commit a change. To commit a change to the local repository, type the following commands in GitBash:
 
-    git add .
-    git commit -v -a -m "<Describe the changes made in this commit>"
+  `git add .`
+    
+  `git commit -v -a -m "<Describe the changes made in this commit>"`
 
 The `add` command adds your changes to a staging area in preparation for committing them to the repository. The period after the `add` command specifies that you want to stage all of the files that you added or modified, checking subfolders recursively. (If you don't want to commit all of the changes, you can add specific files. You can also undo a commit. For help, type `git add -help` or `git status`.)
 
@@ -146,19 +160,21 @@ After a branch is successfully merged (that is, your pull request is accepted), 
 
 For example, if your local branch X was successfully merged into the OfficeDev/microsoft-graph-docs master branch and you want to make additional updates to the content that was merged. Create a new local branch, X2, from the OfficeDev/microsoft-graph-docs master branch. To do this, open GitBash and execute the following commands:
 
-    cd microsoft-graph-docs
-    git pull upstream master:X2
-    git push origin X2
+```
+	cd skype-docs
+	git pull upstream master:X2
+	git push origin X2
+```
 
 You now have local copies (in a new local branch) of the work that you submitted in branch X. The X2 branch also contains all the work other writers have merged, so if your work depends on others' work (for example, shared images), it is available in the new branch. You can verify that your previous work (and others' work) is in the branch by checking out the new branch...
 
-    git checkout X2
+  `git checkout X2`
 
 ...and verifying the content. (The `checkout` command updates the files in `C:\Users\<yourusername>\microsoft-graph-docs` to the current state of the X2 branch.) Once you check out the new branch, you can make updates to the content and commit them as usual. However, to avoid working in the merged branch (X) by mistake, it's best to delete it (see the following **Delete a branch** section).
 
 #### Delete a branch
 
-Once your changes are successfully merged into the main repository, delete the branch you used because you no longer need it.  Any additional work should be done in a new branch.  
+Once your changes are successfully merged into the main repository, delete the branch you used because you no longer need it. Any additional work should be done in a new branch.  
 
 #### To delete a branch
 
@@ -170,10 +186,9 @@ Congratulations, you have successfully contributed to the project!
 
 ## How to use Markdown to format your topic
 
-### Standard Markdown
+### Standard markdown
 
-All of the articles in this repository use Markdown. A complete introduction (and listing of all the syntax) can be found at [Markdown Home](http://daringfireball.net/projects/markdown/ 
-).
+All of the articles in this repository use Markdown. A complete introduction (and listing of all the syntax) can be found at [Markdown Home](http://daringfireball.net/projects/markdown/).
  
 ## FAQ
 
@@ -199,7 +214,6 @@ Currently, we are not allowing external contributors to approve pull requests in
 
 Pull requests are typically reviewed within 10 business days.
 
-
 ## More resources
 
 * To learn more about Markdown, go to the Git creator's site [Daring Fireball].
@@ -210,3 +224,4 @@ Pull requests are typically reviewed within 10 business days.
 [Set Up Git]: http://help.github.com/win-set-up-git/
 [Markdown Home]: http://daringfireball.net/projects/markdown/
 [Daring Fireball]: http://daringfireball.net/
+
